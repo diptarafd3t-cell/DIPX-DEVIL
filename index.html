@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIPX DEVIL | Intelligence Vault</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+    <div class="app-container">
+        <aside class="sidebar">
+            <div class="brand">DIPX<br>DEVIL</div>
+            <nav class="nav-menu">
+                <div class="nav-item active" title="Chat Intelligence"><i data-lucide="message-square"></i></div>
+                <div class="nav-item" title="DNS Vault"><i data-lucide="shield-check"></i></div>
+                <div class="nav-item" id="settings-trigger" title="Settings"><i data-lucide="settings"></i></div>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <header>
+                <h1><span class="accent-text">SYSTEM:</span> INTELLIGENCE_VAULT_V3</h1>
+                <div class="status-pill">
+                    <div class="dot"></div>
+                    <span>UPLINK ACTIVE</span>
+                </div>
+            </header>
+
+            <div id="chat-container">
+                <div class="message ai-message">
+                    Welcome, Operator. DIPX DEVIL system is online. How shall we proceed?
+                </div>
+            </div>
+
+            <div class="input-area">
+                <div class="textarea-wrapper">
+                    <textarea id="user-input" rows="1" placeholder="Enter command..."></textarea>
+                </div>
+                <button id="send-btn"><i data-lucide="send" style="color: #000;"></i></button>
+            </div>
+        </main>
+    </div>
+
+    <div id="settings-modal" class="modal hidden">
+        <div class="modal-content">
+            <h2><span class="accent-text">ENCRYPTION KEY</span></h2>
+            <input type="password" id="api-key-input" placeholder="sk-...">
+            <div style="display: flex; gap: 10px; justify-content: center;">
+                <button id="save-key-btn">AUTHORIZE</button>
+                <button class="glass-btn" id="close-modal">CLOSE</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
