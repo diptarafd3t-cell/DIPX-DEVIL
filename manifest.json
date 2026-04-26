@@ -1,0 +1,11 @@
+{
+  "short_name": "DIPX DEVIL",
+  "name": "DIPX DEVIL Intelligence Vault",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "theme_color": "#00d2ff",
+  "background_color": "#05070a",
+  "icons": [
+    { "src": "favicon.ico", "sizes": "64x64", "type": "image/x-icon" }
+  ]
+}
